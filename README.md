@@ -35,7 +35,7 @@ complex BDD frameworks. It focuses on **simplicity**, **clarity**, and minimizin
 If TstFlw is published to a Maven repository (e.g., Maven Central or your own internal repo), add it to your `pom.xml`:
 
     <dependency>
-        <groupId>com.yourorg</groupId>
+        <groupId>com.tstflw</groupId>
         <artifactId>tstflw</artifactId>
         <version>1.0.0</version>
         <scope>test</scope>
