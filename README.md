@@ -61,6 +61,7 @@ If TstFlw is published to a Maven repository (e.g., Maven Central or your own in
 ## Usage Example
 
 Below is a simple test illustrating how to use **TstFlw** in JUnit:
+```java
 
     import static org.junit.jupiter.api.Assertions.assertEquals;
     import org.junit.jupiter.api.Test;
@@ -93,6 +94,7 @@ Below is a simple test illustrating how to use **TstFlw** in JUnit:
             });
         }
     }
+```
 
 1. **`when()`** – Put the logic or code under test here.
 2. **`then()`** – Use assertions to verify the outcome.
@@ -103,6 +105,7 @@ Below is a simple test illustrating how to use **TstFlw** in JUnit:
 ## Complete Source Code
 
 Here is the entire **TstFlw** class for quick reference:
+```java
 
     public class TstFlw {
         public static abstract class Task {
@@ -129,6 +132,7 @@ Here is the entire **TstFlw** class for quick reference:
             given._when()._then().end();
         }
     }
+```
 
 - **`TstFlw.Task`**: Extend this abstract class (via an anonymous class or named subclass).
 - **`given(Task given)`**: Orchestrates the execution flow of `when()`, then `then()`, then `end()`.
